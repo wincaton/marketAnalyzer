@@ -8,13 +8,8 @@ import plotly.graph_objects as go
 # =====================================================
 # LOAD DATA
 # =====================================================
-BASE_DIR = os.path.dirname(__file__)
-
-EV_FILE = os.path.join(BASE_DIR, "eCleaned.csv")
-ICE_FILE = os.path.join(BASE_DIR, "iceCleaned.csv")
-
-ev = pd.read_csv(EV_FILE)
-ice = pd.read_csv(ICE_FILE)
+ev = pd.read_csv("eCleaned.csv")
+ice = pd.read_csv("iceCleaned.csv")
 
 # =====================================================
 # CLEAN DATA
